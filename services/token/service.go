@@ -3,6 +3,7 @@ package token
 import (
 	"cawall-be/config"
 	"cawall-be/models"
+	"github.com/golang-jwt/jwt/v5"
 )
 
 const ExpireCount = 2

@@ -2,6 +2,7 @@ package token
 
 import (
 	"cawall-be/models"
+	"github.com/golang-jwt/jwt/v5"
 	"time"
 )
 

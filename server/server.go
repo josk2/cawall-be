@@ -3,6 +3,7 @@ package server
 import (
 	"cawall-be/config"
 	"cawall-be/db"
+	"github.com/labstack/echo/v4"
 
 	"gorm.io/gorm"
 )

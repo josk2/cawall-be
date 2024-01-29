@@ -8,6 +8,8 @@ import (
 	"cawall-be/tests/helpers"
 	"database/sql/driver"
 	"github.com/DATA-DOG/go-sqlmock"
+	"github.com/golang-jwt/jwt/v5"
+	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/assert"
 	"net/http"
 	"testing"
