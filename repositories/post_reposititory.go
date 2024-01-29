@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"echo-demo-project/models"
+	"cawall-be/models"
 
 	"gorm.io/gorm"
 )

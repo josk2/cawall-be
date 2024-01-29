@@ -1,15 +1,15 @@
 package tests
 
 import (
+	"cawall-be/config"
+	"cawall-be/models"
+	"cawall-be/requests"
+	"cawall-be/responses"
+	"cawall-be/server"
+	"cawall-be/server/handlers"
+	"cawall-be/services/token"
+	"cawall-be/tests/helpers"
 	"database/sql/driver"
-	"echo-demo-project/config"
-	"echo-demo-project/models"
-	"echo-demo-project/requests"
-	"echo-demo-project/responses"
-	"echo-demo-project/server"
-	"echo-demo-project/server/handlers"
-	"echo-demo-project/services/token"
-	"echo-demo-project/tests/helpers"
 	"encoding/json"
 	"errors"
 	"fmt"

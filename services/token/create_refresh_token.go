@@ -1,10 +1,8 @@
 package token
 
 import (
-	"echo-demo-project/models"
+	"cawall-be/models"
 	"time"
-
-	"github.com/golang-jwt/jwt/v5"
 )
 
 func (tokenService *Service) CreateRefreshToken(user *models.User) (t string, err error) {

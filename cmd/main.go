@@ -1,13 +1,13 @@
 package main
 
 import (
-	application "echo-demo-project"
-	"echo-demo-project/config"
-	"echo-demo-project/docs"
-	"fmt"
+	application "cawall-be"
+	"cawall-be/config"
+	//"cawall-be/docs"
+	//"fmt"
 )
 
-//	@title			Echo Demo App
+//	@title			Cawall App
 //	@version		1.0
 //	@description	This is a demo version of Echo app.
 
@@ -23,7 +23,7 @@ import (
 func main() {
 	cfg := config.NewConfig()
 
-	docs.SwaggerInfo.Host = fmt.Sprintf("%s:%s", cfg.HTTP.Host, cfg.HTTP.Port)
+	//docs.SwaggerInfo.Host = fmt.Sprintf("%s:%s", cfg.HTTP.Host, cfg.HTTP.Port)
 
 	application.Start(cfg)
 }

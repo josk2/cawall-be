@@ -1,6 +1,6 @@
 package builders
 
-import "echo-demo-project/models"
+import "cawall-be/models"
 
 type UserBuilder struct {
 	email    string

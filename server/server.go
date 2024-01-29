@@ -1,10 +1,9 @@
 package server
 
 import (
-	"echo-demo-project/config"
-	"echo-demo-project/db"
+	"cawall-be/config"
+	"cawall-be/db"
 
-	"github.com/labstack/echo/v4"
 	"gorm.io/gorm"
 )
 

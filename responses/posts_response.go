@@ -1,7 +1,7 @@
 package responses
 
 import (
-	"echo-demo-project/models"
+	"cawall-be/models"
 )
 
 type PostResponse struct {

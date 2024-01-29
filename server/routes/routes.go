@@ -1,15 +1,12 @@
 package routes
 
 import (
-	s "echo-demo-project/server"
-	"echo-demo-project/server/handlers"
-	"echo-demo-project/services/token"
+	s "cawall-be/server"
+	"cawall-be/server/handlers"
+	"cawall-be/services/token"
 	"fmt"
 
-	"github.com/golang-jwt/jwt/v5"
 	echojwt "github.com/labstack/echo-jwt/v4"
-	"github.com/labstack/echo/v4"
-
 	"github.com/labstack/echo/v4/middleware"
 	echoSwagger "github.com/swaggo/echo-swagger"
 )

@@ -1,7 +1,7 @@
 package user
 
 import (
-	"echo-demo-project/requests"
+	"cawall-be/requests"
 
 	"gorm.io/gorm"
 )

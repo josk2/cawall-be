@@ -1,8 +1,8 @@
 package db
 
 import (
-	"echo-demo-project/config"
-	"echo-demo-project/db/seeders"
+	"cawall-be/config"
+	"cawall-be/db/seeders"
 	"fmt"
 
 	"gorm.io/driver/mysql"

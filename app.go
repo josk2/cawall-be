@@ -1,9 +1,9 @@
 package application
 
 import (
-	"echo-demo-project/config"
-	"echo-demo-project/server"
-	"echo-demo-project/server/routes"
+	"cawall-be/config"
+	"cawall-be/server"
+	"cawall-be/server/routes"
 	"log"
 )
 

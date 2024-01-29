@@ -1,8 +1,8 @@
 package post
 
 import (
-	"echo-demo-project/models"
-	"echo-demo-project/requests"
+	"cawall-be/models"
+	"cawall-be/requests"
 
 	"gorm.io/gorm"
 )

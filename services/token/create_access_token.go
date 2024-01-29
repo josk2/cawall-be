@@ -1,10 +1,8 @@
 package token
 
 import (
-	"echo-demo-project/models"
+	"cawall-be/models"
 	"time"
-
-	"github.com/golang-jwt/jwt/v5"
 )
 
 func (tokenService *Service) CreateAccessToken(user *models.User) (t string, expired int64, err error) {

@@ -1,6 +1,6 @@
 package post
 
-import "echo-demo-project/models"
+import "cawall-be/models"
 
 func (postService *Service) Delete(post *models.Post) {
 	postService.DB.Delete(post)

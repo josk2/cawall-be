@@ -1,18 +1,15 @@
 package handlers
 
 import (
-	"echo-demo-project/models"
-	"echo-demo-project/repositories"
-	"echo-demo-project/requests"
-	"echo-demo-project/responses"
-	s "echo-demo-project/server"
-	postservice "echo-demo-project/services/post"
-	"echo-demo-project/services/token"
+	"cawall-be/models"
+	"cawall-be/repositories"
+	"cawall-be/requests"
+	"cawall-be/responses"
+	s "cawall-be/server"
+	postservice "cawall-be/services/post"
+	"cawall-be/services/token"
 	"net/http"
 	"strconv"
-
-	"github.com/golang-jwt/jwt/v5"
-	"github.com/labstack/echo/v4"
 )
 
 type PostHandlers struct {

@@ -1,16 +1,14 @@
 package handlers
 
 import (
-	"echo-demo-project/models"
-	"echo-demo-project/repositories"
-	"echo-demo-project/requests"
-	"echo-demo-project/responses"
-	s "echo-demo-project/server"
-	tokenservice "echo-demo-project/services/token"
+	"cawall-be/models"
+	"cawall-be/repositories"
+	"cawall-be/requests"
+	"cawall-be/responses"
+	s "cawall-be/server"
+	tokenservice "cawall-be/services/token"
 	"fmt"
 	"net/http"
-
-	"github.com/labstack/echo/v4"
 
 	jwtGo "github.com/golang-jwt/jwt/v5"
 	"golang.org/x/crypto/bcrypt"

@@ -1,15 +1,13 @@
 package handlers
 
 import (
-	"echo-demo-project/models"
-	"echo-demo-project/repositories"
-	"echo-demo-project/requests"
-	"echo-demo-project/responses"
-	s "echo-demo-project/server"
-	"echo-demo-project/services/user"
+	"cawall-be/models"
+	"cawall-be/repositories"
+	"cawall-be/requests"
+	"cawall-be/responses"
+	s "cawall-be/server"
+	"cawall-be/services/user"
 	"net/http"
-
-	"github.com/labstack/echo/v4"
 )
 
 type RegisterHandler struct {

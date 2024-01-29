@@ -1,15 +1,13 @@
 package tests
 
 import (
+	"cawall-be/requests"
+	"cawall-be/server"
+	"cawall-be/server/handlers"
+	"cawall-be/services/token"
+	"cawall-be/tests/helpers"
 	"database/sql/driver"
-	"echo-demo-project/requests"
-	"echo-demo-project/server"
-	"echo-demo-project/server/handlers"
-	"echo-demo-project/services/token"
-	"echo-demo-project/tests/helpers"
 	"github.com/DATA-DOG/go-sqlmock"
-	"github.com/golang-jwt/jwt/v5"
-	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/assert"
 	"net/http"
 	"testing"

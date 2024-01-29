@@ -1,10 +1,8 @@
 package token
 
 import (
-	"echo-demo-project/config"
-	"echo-demo-project/models"
-
-	"github.com/golang-jwt/jwt/v5"
+	"cawall-be/config"
+	"cawall-be/models"
 )
 
 const ExpireCount = 2
