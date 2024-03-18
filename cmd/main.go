@@ -1,6 +1,8 @@
 package main
 
-import "cawall-be/config"
+import (
+	"cawall-be/config"
+)
 
 //	@title			Cawall App
 //	@version		1.0

@@ -1,6 +1,7 @@
 # GraphQL schema example
 #
 # https://gqlgen.com/getting-started/
+directive @goField(forceResolver: Boolean, name: String, omitField: Boolean) on FIELD_DEFINITION | INPUT_FIELD_DEFINITION
 
 type Todo {
   id: ID!
@@ -15,7 +16,7 @@ type User {
 }
 
 type Query {
-  todos: [Todo!]!
+  todos: [Todo!]! @goField(forceResolver: true)
 }
 
 input NewTodo {
