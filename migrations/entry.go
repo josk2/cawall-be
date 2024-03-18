@@ -1,4 +1,5 @@
-package main
+// package main
+package migrations
 
 import (
 	"cawall-be/migrations/list"

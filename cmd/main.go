@@ -1,11 +1,6 @@
 package main
 
-import (
-	application "cawall-be"
-	"cawall-be/config"
-	//"cawall-be/docs"
-	//"fmt"
-)
+import "cawall-be/config"
 
 //	@title			Cawall App
 //	@version		1.0
@@ -25,5 +20,5 @@ func main() {
 
 	//docs.SwaggerInfo.Host = fmt.Sprintf("%s:%s", cfg.HTTP.Host, cfg.HTTP.Port)
 
-	application.Start(cfg)
+	Start(cfg)
 }
