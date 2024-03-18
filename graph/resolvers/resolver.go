@@ -4,4 +4,10 @@ package resolvers
 //
 // It serves as dependency injection for your app, add any dependencies you require here.
 
-type Resolver struct{}
+type Resolver struct {
+	Repo *string
+}
+
+func NewResolver() *Resolver {
+	return &Resolver{}
+}

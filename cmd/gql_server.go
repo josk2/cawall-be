@@ -2,6 +2,7 @@ package main
 
 import (
 	"cawall-be/graph"
+	"cawall-be/graph/resolvers"
 	"github.com/99designs/gqlgen/graphql/handler"
 )
 
@@ -13,7 +14,7 @@ func initGraphqlServer(gqlPort string) *handler.Server {
 		gqlPort = defaultPort
 	}
 
-	srv := handler.NewDefaultServer(graph.NewExecutableSchema(graph.Config{Resolvers: &graph.Resolver{}}))
+	srv := handler.NewDefaultServer(graph.NewExecutableSchema(graph.Config{Resolvers: &resolvers.Resolver{}}))
 
 	//http.Handle("/", playground.Handler("GraphQL playground", "/query"))
 	//http.Handle("/query", srv)

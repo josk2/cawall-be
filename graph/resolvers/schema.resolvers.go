@@ -16,9 +16,9 @@ func (r *mutationResolver) CreateTodo(ctx context.Context, input gqlmodel.NewTod
 	panic(fmt.Errorf("not implemented: CreateTodo - createTodo"))
 }
 
-// Todos is the resolver for the todos field.
-func (r *queryResolver) Todos(ctx context.Context) ([]*gqlmodel.Todo, error) {
-	panic(fmt.Errorf("not implemented: Todos - todos"))
+// TodoQuery is the resolver for the todoQuery field.
+func (r *queryResolver) TodoQuery(ctx context.Context) (*gqlmodel.TodoQuery, error) {
+	panic(fmt.Errorf("not implemented: TodoQuery - todoQuery"))
 }
 
 // Mutation returns graph.MutationResolver implementation.

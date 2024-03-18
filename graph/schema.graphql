@@ -3,12 +3,6 @@
 # https://gqlgen.com/getting-started/
 directive @goField(forceResolver: Boolean, name: String, omitField: Boolean) on FIELD_DEFINITION | INPUT_FIELD_DEFINITION
 
-type Todo {
-  id: ID!
-  text: String!
-  done: Boolean!
-  user: User!
-}
 
 type User {
   id: ID!
@@ -16,14 +10,19 @@ type User {
 }
 
 type Query {
-  todos: [Todo!]! @goField(forceResolver: true)
-}
-
-input NewTodo {
-  text: String!
-  userId: String!
+  todoQuery: TodoQuery @goField(forceResolver: true)
 }
 
 type Mutation {
   createTodo(input: NewTodo!): Todo!
 }
+
+# Custom Scalar Types
+scalar Timestamp
+scalar Uint
+scalar Uint64
+scalar Uint32
+scalar Int64
+scalar Int32
+scalar Upload
+scalar JSON

@@ -1,0 +1,16 @@
+type TodoQuery {
+    todos: [Todo!]! @goField(forceResolver: true)
+}
+
+
+type Todo {
+id: ID!
+text: String!
+done: Boolean! @goField(forceResolver: true)
+user: User!
+}
+
+input NewTodo {
+    text: String!
+    userId: String!
+}

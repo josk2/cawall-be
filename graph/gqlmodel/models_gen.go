@@ -20,6 +20,10 @@ type Todo struct {
 	User *User  `json:"user"`
 }
 
+type TodoQuery struct {
+	Todos []*Todo `json:"todos"`
+}
+
 type User struct {
 	ID   string `json:"id"`
 	Name string `json:"name"`
